@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+
+.video-container{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    z-index: -5;
+}
+
+.text{
+   text-align: center; 
+   font-size: 5rem;
+   position: relative;
+   top: 40%;
+   color: rgba(255, 255, 255, 0.089);
+}
+.text p{
+    font-size: 2rem;
+    color: rgba(255, 217, 0, 0.13);
+}
+header::after{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.705);
+    z-index: -3;
+}
+
+button{
+    width: 7rem;
+    height: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff48;
+    color: rgba(255, 217, 0, 0.856);
+}
+ button .play{
+    position: relative;
+    left: -.5rem;
+    z-index: 1;
+    color: rgb(197, 247, 197);
+ }
+ button .pause{
+    position: relative;
+    right: -.7rem;
+    z-index: 1;
+ }
+ button .switch{
+    position: absolute;
+    background: gold;
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 5px 0 0 5px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: all .5s;
+ }
+ .slide .switch{
+    left: 50%;
+    transition: all .5s;
+ }
